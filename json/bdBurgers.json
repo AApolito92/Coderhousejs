@@ -25,7 +25,7 @@
        "clase": "theBomb",
        "descripcion": "Una bomba de sabor",
        "pCombo": 1050,
-       "foto": "../multimedia/menu/Bomb.webp",
+       "foto": "../multimedia/menu/bomb.webp",
        "alt": "burgerpic",
        "categoria": "burger"
     },
