@@ -1,0 +1,29 @@
+
+@import "base/maps";
+
+
+
+/* generales */
+
+a {
+    text-decoration: none; 
+}
+ 
+body {
+    
+    margin:0%;    
+    background-color: black;
+}  
+
+
+h2,h3,h4 {
+    text-decoration: map-get($map , text-deco );
+}
+
+/* fin generales */
+
+@import "components/header";
+@import "components/main";
+@import "components/menu";
+@import "components/footer";
+@import "components/carrito";

@@ -1,0 +1,122 @@
+[
+    {
+       "id": 1,
+       "nombre": "Cheeseburger",
+       "clase": "cheeseburger",
+       "descripcion": "La clasica burger",
+       "pCombo": 850,
+       "foto": "../multimedia/menu/cheeseburger.webp",
+       "alt": "Hamburgesa con queso",
+       "categoria": "burger"
+    },
+    {
+       "id": 2,
+       "nombre": "Doble Bacon",
+       "clase": "dobleBacon",
+       "descripcion": "Clasica con un extra",
+       "pCombo": 950,
+       "foto": "../multimedia/menu/doblebacon.webp",
+       "alt": "burgerpic",
+       "categoria": "burger"
+    },
+    {
+       "id": 3,
+       "nombre": "The Bomb",
+       "clase": "theBomb",
+       "descripcion": "Una bomba de sabor",
+       "pCombo": 1050,
+       "foto": "../multimedia/menu/bomb.webp",
+       "alt": "burgerpic",
+       "categoria": "burger"
+    },
+    {
+       "id": 4,
+       "nombre": "Arg",
+       "clase": "arg",
+       "descripcion": "Sabores nacionales",
+       "pCombo": 850,
+       "foto": "../multimedia/menu/argi-criolla.webp",
+       "alt": "burgerpic",
+       "categoria": "burger"
+    },
+    {
+       "id": 5,
+       "nombre": "Fuego",
+       "clase": "fuego",
+       "descripcion": "Puro picante y sabor",
+       "pCombo": 780,
+       "foto": "../multimedia/menu/Fuego-monterrey.webp",
+       "alt": "burgerpic",
+       "categoria": "burger"
+    },
+    {
+       "id": 6,
+       "nombre": "Shack",
+       "clase": "shack",
+       "descripcion": "Una delicia extranjera",
+       "pCombo": 900,
+       "foto": "../multimedia/menu/shacke-shackie.webp",
+       "alt": "burgerpic",
+       "categoria": "burger"
+    },
+    {
+      "id": 7,
+      "nombre": "Papas Fritas",
+      "clase": "papasFritas",
+      "descripcion": "Clasicas - Triple cocción",
+      "pCombo": 400,
+      "foto": "../multimedia/menu/fries.webp",
+      "alt": "burgerpic",
+      "categoria": "sideDish"
+   },
+   {
+      "id": 8,
+      "nombre": "Papas CBV",
+      "clase": "cbv",
+      "descripcion": "Cheddar-Bacon-Verdeo",
+      "pCombo": 550,
+      "foto": "../multimedia/menu/friescheddar.webp",
+      "alt": "burgerpic",
+      "categoria": "sideDish"
+   },
+   {
+      "id": 9,
+      "nombre": "Nachos",
+      "clase": "nachos",
+      "descripcion": "Nachos caseros con salsa",
+      "pCombo": 500,
+      "foto": "../multimedia/menu/nachos.webp",
+      "alt": "burgerpic",
+      "categoria": "sideDish"
+   },
+   {
+      "id": 10,
+      "nombre": "Papas a la provenzal",
+      "clase": "provenzal",
+      "descripcion": "Papas en cuña con provenzal",
+      "pCombo": 600,
+      "foto": "../multimedia/menu/provenzal.webp",
+      "alt": "burgerpic",
+      "categoria": "sideDish"
+   },
+   {
+      "id": 11,
+      "nombre": "Sticks de mozzarella",
+      "clase": "sticks",
+      "descripcion": "Sticks con salsa marinara o alioli",
+      "pCombo": 650,
+      "foto": "../multimedia/menu/sticks.webp",
+      "alt": "burgerpic",
+      "categoria": "sideDish"
+   },
+   {
+      "id": 12,
+      "nombre": "Chicken Tenders",
+      "clase": "chicken",
+      "descripcion": "Chicken strips con salsa",
+      "pCombo": 600,
+      "foto": "../multimedia/menu/tenders.webp",
+      "alt": "burgerpic",
+      "categoria": "sideDish"
+   }
+ ]

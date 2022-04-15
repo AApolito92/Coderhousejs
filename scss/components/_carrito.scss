@@ -1,0 +1,159 @@
+@import "../base/extends";
+
+ #cajaMain{
+        padding: 3%;
+      
+
+        #cajaFiltros {
+                margin-top: 2.5%;
+                margin-bottom: 1%;
+                padding-bottom: 1%;
+                display: flex;
+                justify-content:space-around;
+                border-bottom: 3px solid black;
+        }
+
+
+        #menuBox {
+                width: 100%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "b1 b2 b3"
+                "b4 b5 b6"
+                "side1 side2 side3"
+                "side4 side5 side6"; 
+
+                justify-items: center;
+                
+
+                @media only screen and (max-width: 480px) {      
+                        padding-top: 10%;    
+                        display: grid;
+                        
+                        grid-template-columns: 1fr 1fr ;
+                        grid-template-rows: auto;
+                        grid-template-areas: 
+                        "b1 b2 "
+                        "b3 b4 "
+                        "b5 b6"
+                        "side1 side2"
+                        "side3 side4"
+                        "side5 side6";     
+                        justify-items: center;
+                         
+                        }
+
+                .cheeseburger {
+                        grid-area: b1;
+                        margin-bottom: 5%;
+                       @extend %propiedades;
+
+                      
+                }
+                .dobleBacon{
+                        grid-area: b2;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .theBomb {
+                        grid-area: b3;  
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .arg {
+                        grid-area: b4;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .fuego {
+                        grid-area: b5;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .shack {
+                        grid-area: b6;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .papasFritas {
+                        grid-area: side1;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .cbv {
+                        grid-area: side2;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .nachos {
+                        grid-area: side3;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .provenzal {
+                        grid-area: side4;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .sticks {
+                        grid-area: side5;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+                .chicken {
+                        grid-area: side6;
+                        margin-bottom: 5%;
+                        @extend %propiedades
+                }
+
+        }
+
+        img {
+                border-radius: 5%;    
+                        width: 90%;
+                    @media only screen and (max-width: 480px) {   
+                            width: 75%;
+                        }
+                        @media only screen and (min-width: 481px) and (max-width: 1440px) {                
+                                width: 75%;
+                        }
+                }
+
+                i {
+                        margin-left: 5%;
+                        margin-right: 5%;
+                }
+
+                button {
+                        border-radius: 10%;
+                        
+                        background-color:#9f9d9b;
+                        border: 1px solid black;
+                }
+        
+ }
+
+ #cajaCarrito {
+         text-align: center;
+         ul { list-style-type: none
+                ;
+                 margin: 2% auto;
+                 
+                 li {
+                         margin-top: 1%;
+                 }
+
+         }
+         border-bottom: 5px solid black;
+         margin-bottom: 5%;
+
+         button {
+                 margin:auto;
+                 margin-left: 1%;
+                 
+         }
+ }
+

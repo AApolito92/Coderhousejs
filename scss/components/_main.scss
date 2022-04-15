@@ -1,0 +1,136 @@
+@import "../base/maps";
+@import "../base/extends";
+
+main {
+    font-family: lato;
+    background-image: url(../multimedia/concrete_wall.webp);
+    color: white; 
+    margin: auto;
+    width: 100%;   
+
+    .artesanal {
+      text-align: map-get($map , align );       
+      padding-bottom: 5%; 
+
+      img {
+      
+        width: 100%;   
+      }
+  
+    }
+
+    #menuBurger {
+      text-align: map-get($map, align );
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+
+        .burger { 
+          img {   
+              border-radius: 10%;
+              width: 60%;
+                  @media only screen and (max-width: 480px) {
+                    width: 80%;                        
+                  }
+                  @media only screen and (min-width: 481px) and (max-width: 1024px) {                        
+                    width: 90%;                      
+                }
+                &:hover {
+                  transform:rotateY(360deg);
+                  transition: all 2.5s;
+                }
+      } 
+    }
+    }
+    
+       
+/*Nosotros*/
+
+  #Nosotros {
+    text-align: map-get($map , align );
+    padding-top: 5%;
+    p {
+      padding: 2%;
+      width: 25%;
+      margin: auto;
+      border-bottom: 1px solid white;
+
+        @media only screen and (max-width: 480px) {          
+              width: 70%;          
+      }
+      @media only screen and (min-width: 481px) and (max-width: 1024px) {
+            width: 50%;        
+    }      
+  }
+  }
+
+/* fin nosotros*/ 
+
+ /*sucursales*/
+
+ .sucursalesCont {
+  padding-top: 3%;
+
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 4%;
+   } 
+
+   .contLocales {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;    
+
+    
+  .Locales {    
+    @extend %local;
+  }
+  }
+
+
+} 
+
+
+/* fin sucursales */
+
+/* Carrousel */
+
+.bienvenidos {
+  text-align: map-get($map , align );
+  article {
+    padding-top: 5%;
+
+    
+#carouselExampleControls {
+width: 60%;
+padding-bottom: 5%;
+  @media only screen and (max-width: 480px) {    
+        width: 100%;
+        padding-bottom: 5%;    
+}
+}
+
+@media only screen and (max-width: 480px) {
+#carouselExampleControls {
+    width: 100%;
+    padding-bottom: 5%;
+}
+}
+
+}
+}
+
+    }
+
+    /* fin main */
+
+    
+      
+
+      
+    
+     
+
+

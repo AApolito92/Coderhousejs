@@ -1,0 +1,221 @@
+/*Menu.html*/
+@import "../base/maps";
+
+
+.menu { 
+
+    padding-top: 5%;
+   .main-dish {
+        margin: 0 auto;
+        padding-bottom: 10%;
+        padding-top: 5%;
+        text-align: map-get($map , align);    
+        background-image: url(../multimedia/cork.webp);
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menuTitulo menuTitulo menuTitulo"
+        "burger1 burger2 burger3"
+        "burger4 burger5 burger6";        
+      
+        border: 10px solid black;
+
+        @media only screen and (max-width: 480px) {      
+        padding-top: 10%;    
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menuTitulo menuTitulo"
+        "burger1 burger2 "
+        "burger3 burger4 "
+        "burger5 burger6";      
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 1024px) {    
+        padding-top: 10%;
+        }
+
+        h1 {
+            margin: 0 auto;
+            grid-area: menuTitulo;
+            padding-top: 10px;
+            padding-bottom: 3%;
+            font-family: "Anton", sans-serif;
+        }
+        
+.anchor-position {
+    position: relative;
+    padding: 2%;   
+
+    &:hover {
+        .anchor-text {
+            display: none;
+            transition: all 1s;
+        }
+        .hidden-text {
+            display: block;
+        }
+        img {
+            filter: blur(5px);
+            transition: all 0.5s;
+        }
+    }
+
+    
+
+    img {
+        border-radius: 5%;        
+            @media only screen and (max-width: 480px) {   
+                    width: 100%;
+                }
+                @media only screen and (min-width: 481px) and (max-width: 1440px) {                
+                        width: 100%;
+                }
+        }
+    
+    .anchor-text {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: cursive;   
+    }
+    
+    .hidden-text {    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: cursive;
+        display: none;
+            @media only screen and (max-width: 480px) {       
+                width:100%;
+                }
+            @media only screen and (min-width: 481px) and (max-width: 1024px) {
+                width: 100%;
+                }
+    }
+}
+
+.burger-1{
+    grid-area: burger1;
+}
+.burger-2 {
+    grid-area: burger2;
+}
+.burger-3 {
+    grid-area: burger3;
+}
+.burger-4 {
+    grid-area: burger4;
+}
+.burger-5 {
+    grid-area: burger5;
+}
+
+.burger-6 {
+    grid-area: burger6;
+}
+    } 
+        /* Sides dishes*/
+    .side-dish {
+        margin: 0 auto;
+        padding-bottom: 10%;
+        padding-top: 5%;        
+        text-align: map-get($map , align);    
+        background-image: url(../multimedia/cork.webp);
+        width: 80%;
+        border: 10px solid black;  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "sideTitulo sideTitulo"
+        "side1 side2" 
+        "side3 side4"
+        "side5 side6"; 
+
+
+      
+
+
+        h2 {
+            grid-area: sideTitulo;
+            font-family: "Anton", sans-serif;
+        }
+
+        .anchor-position {
+            position: relative;
+            padding: 2%;   
+        
+            &:hover {
+                .anchor-text {
+                    display: none;
+                    transition: all 1s;
+                }
+                .hidden-text {
+                    display: block;
+                }
+                img {
+                    filter: blur(5px);
+                    transition: all 0.5s;
+                }
+            }
+        
+            
+        
+            img {
+                border-radius: 5%;   
+                width: 80%;     
+                    @media only screen and (max-width: 480px) {   
+                            width: 100%;
+                        }
+                        @media only screen and (min-width: 481px) and (max-width: 1440px) {                
+                                width: 100%;
+                        }
+                }
+            
+            .anchor-text {
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -20%);
+                font-family: cursive; 
+                width: 50%;  
+            }
+            
+            .hidden-text {    
+                color: darkred;
+                font-weight: bold;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: cursive;
+                display: none;
+                    @media only screen and (max-width: 480px) {       
+                        width:100%;
+                        }
+                    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+                        width: 100%;
+                        }
+            }
+        }
+        
+      
+        
+
+        
+    }
+    
+}
+ 
+
+
+
+
+
+/*fin menu.html*/

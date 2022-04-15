@@ -1,0 +1,83 @@
+
+/* footer */
+@import "../base/maps";
+
+
+
+
+footer {
+    border: map-get($map , borders );
+    width: 100%;
+    margin: auto;
+    background-image: url(../multimedia/rock.webp);
+    text-align: map-get($map, align );
+    padding-top: 2%;
+
+        nav {
+            a{
+                color: black;    
+                font-family: 'Anton', sans-serif;
+                font-size: 2em; 
+
+                &:hover {
+                    color: darkred;          
+                }
+            }
+            .media {    
+                padding: 2% 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                list-style-type: none;
+                justify-content: space-around;           
+                   li{
+                       width: 33%;                       
+                       a {
+                           &:hover {
+                               img {
+                                   background-color: darkred;
+                               }
+                           }
+                           img {
+                               border-radius: 20%;
+                               width: 20%;
+                           }
+                       }
+                   }
+                
+             }
+
+
+        }
+
+        #contacto { 
+            
+  form {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+
+    label {
+        margin: 1% auto;
+    }
+    .boton {
+        margin: 1% 0;
+    }    
+} 
+        }
+  }
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+/* fin footer */

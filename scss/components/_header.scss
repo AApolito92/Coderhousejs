@@ -1,0 +1,31 @@
+/* header */
+@import "../base/maps";
+
+
+
+.navbar-brand {
+    font-family: 'Anton', sans-serif;
+}
+
+header {
+    width: 100%;    
+    border:  map-get($map, borders );
+    text-align: map-get($map, align );
+    margin: auto;
+    h1 { 
+        display: none;
+     }
+        nav {
+            ul {
+                text-align:  map-get($map, align );
+                font-family: lato;   
+                    li {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        font-weight: bold; 
+                    }
+            }
+        }
+}
+
+

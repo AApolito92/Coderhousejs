@@ -1,0 +1,539 @@
+/* generales */
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0%;
+  background-color: black;
+}
+
+h2, h3, h4 {
+  text-decoration: underline;
+}
+
+/* fin generales */
+/* header */
+.navbar-brand {
+  font-family: "Anton", sans-serif;
+}
+
+header {
+  width: 100%;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+}
+header h1 {
+  display: none;
+}
+header nav ul {
+  text-align: center;
+  font-family: lato;
+}
+header nav ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+main .sucursalesCont .contLocales .Locales {
+  text-align: center;
+  width: 40%;
+  background-color: rgba(24, 23, 24, 0.38);
+  margin-bottom: 1%;
+  border-radius: 4%;
+  border: 1px solid transparent;
+}
+main .sucursalesCont .contLocales .Locales:hover {
+  background-image: linear-gradient(rgba(36, 32, 34, 0.52), rgba(238, 87, 0, 0.7));
+  border: 1px solid white;
+}
+
+#cajaMain #menuBox .chicken, #cajaMain #menuBox .sticks, #cajaMain #menuBox .provenzal, #cajaMain #menuBox .nachos, #cajaMain #menuBox .cbv, #cajaMain #menuBox .papasFritas, #cajaMain #menuBox .shack, #cajaMain #menuBox .fuego, #cajaMain #menuBox .arg, #cajaMain #menuBox .theBomb, #cajaMain #menuBox .dobleBacon, #cajaMain #menuBox .cheeseburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  font-family: lato;
+  background-image: url(../multimedia/concrete_wall.webp);
+  color: white;
+  margin: auto;
+  width: 100%;
+  /*Nosotros*/
+  /* fin nosotros*/
+  /*sucursales*/
+  /* fin sucursales */
+  /* Carrousel */
+}
+main .artesanal {
+  text-align: center;
+  padding-bottom: 5%;
+}
+main .artesanal img {
+  width: 100%;
+}
+main #menuBurger {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+main #menuBurger .burger img {
+  border-radius: 10%;
+  width: 60%;
+}
+@media only screen and (max-width: 480px) {
+  main #menuBurger .burger img {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  main #menuBurger .burger img {
+    width: 90%;
+  }
+}
+main #menuBurger .burger img:hover {
+  transform: rotateY(360deg);
+  transition: all 2.5s;
+}
+main #Nosotros {
+  text-align: center;
+  padding-top: 5%;
+}
+main #Nosotros p {
+  padding: 2%;
+  width: 25%;
+  margin: auto;
+  border-bottom: 1px solid white;
+}
+@media only screen and (max-width: 480px) {
+  main #Nosotros p {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  main #Nosotros p {
+    width: 50%;
+  }
+}
+main .sucursalesCont {
+  padding-top: 3%;
+}
+main .sucursalesCont h3 {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 4%;
+}
+main .sucursalesCont .contLocales {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .bienvenidos {
+  text-align: center;
+}
+main .bienvenidos article {
+  padding-top: 5%;
+}
+main .bienvenidos article #carouselExampleControls {
+  width: 60%;
+  padding-bottom: 5%;
+}
+@media only screen and (max-width: 480px) {
+  main .bienvenidos article #carouselExampleControls {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main .bienvenidos article #carouselExampleControls {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+}
+
+/* fin main */
+/*Menu.html*/
+.menu {
+  padding-top: 5%;
+  /* Sides dishes*/
+}
+.menu .main-dish {
+  margin: 0 auto;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  text-align: center;
+  background-image: url(../multimedia/cork.webp);
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "menuTitulo menuTitulo menuTitulo" "burger1 burger2 burger3" "burger4 burger5 burger6";
+  border: 10px solid black;
+}
+@media only screen and (max-width: 480px) {
+  .menu .main-dish {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "menuTitulo menuTitulo" "burger1 burger2 " "burger3 burger4 " "burger5 burger6";
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .menu .main-dish {
+    padding-top: 10%;
+  }
+}
+.menu .main-dish h1 {
+  margin: 0 auto;
+  grid-area: menuTitulo;
+  padding-top: 10px;
+  padding-bottom: 3%;
+  font-family: "Anton", sans-serif;
+}
+.menu .main-dish .anchor-position {
+  position: relative;
+  padding: 2%;
+}
+.menu .main-dish .anchor-position:hover .anchor-text {
+  display: none;
+  transition: all 1s;
+}
+.menu .main-dish .anchor-position:hover .hidden-text {
+  display: block;
+}
+.menu .main-dish .anchor-position:hover img {
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+.menu .main-dish .anchor-position img {
+  border-radius: 5%;
+}
+@media only screen and (max-width: 480px) {
+  .menu .main-dish .anchor-position img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1440px) {
+  .menu .main-dish .anchor-position img {
+    width: 100%;
+  }
+}
+.menu .main-dish .anchor-position .anchor-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+}
+.menu .main-dish .anchor-position .hidden-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .menu .main-dish .anchor-position .hidden-text {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .menu .main-dish .anchor-position .hidden-text {
+    width: 100%;
+  }
+}
+.menu .main-dish .burger-1 {
+  grid-area: burger1;
+}
+.menu .main-dish .burger-2 {
+  grid-area: burger2;
+}
+.menu .main-dish .burger-3 {
+  grid-area: burger3;
+}
+.menu .main-dish .burger-4 {
+  grid-area: burger4;
+}
+.menu .main-dish .burger-5 {
+  grid-area: burger5;
+}
+.menu .main-dish .burger-6 {
+  grid-area: burger6;
+}
+.menu .side-dish {
+  margin: 0 auto;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  text-align: center;
+  background-image: url(../multimedia/cork.webp);
+  width: 80%;
+  border: 10px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "sideTitulo sideTitulo" "side1 side2" "side3 side4" "side5 side6";
+}
+.menu .side-dish h2 {
+  grid-area: sideTitulo;
+  font-family: "Anton", sans-serif;
+}
+.menu .side-dish .anchor-position {
+  position: relative;
+  padding: 2%;
+}
+.menu .side-dish .anchor-position:hover .anchor-text {
+  display: none;
+  transition: all 1s;
+}
+.menu .side-dish .anchor-position:hover .hidden-text {
+  display: block;
+}
+.menu .side-dish .anchor-position:hover img {
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+.menu .side-dish .anchor-position img {
+  border-radius: 5%;
+  width: 80%;
+}
+@media only screen and (max-width: 480px) {
+  .menu .side-dish .anchor-position img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1440px) {
+  .menu .side-dish .anchor-position img {
+    width: 100%;
+  }
+}
+.menu .side-dish .anchor-position .anchor-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-family: cursive;
+  width: 50%;
+}
+.menu .side-dish .anchor-position .hidden-text {
+  color: darkred;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .menu .side-dish .anchor-position .hidden-text {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .menu .side-dish .anchor-position .hidden-text {
+    width: 100%;
+  }
+}
+
+/*fin menu.html*/
+/* footer */
+footer {
+  border: 1px solid black;
+  width: 100%;
+  margin: auto;
+  background-image: url(../multimedia/rock.webp);
+  text-align: center;
+  padding-top: 2%;
+}
+footer nav a {
+  color: black;
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+}
+footer nav a:hover {
+  color: darkred;
+}
+footer nav .media {
+  padding: 2% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-around;
+}
+footer nav .media li {
+  width: 33%;
+}
+footer nav .media li a:hover img {
+  background-color: darkred;
+}
+footer nav .media li a img {
+  border-radius: 20%;
+  width: 20%;
+}
+footer #contacto form {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer #contacto form label {
+  margin: 1% auto;
+}
+footer #contacto form .boton {
+  margin: 1% 0;
+}
+
+/* fin footer */
+main .sucursalesCont .contLocales .Locales {
+  text-align: center;
+  width: 40%;
+  background-color: rgba(24, 23, 24, 0.38);
+  margin-bottom: 1%;
+  border-radius: 4%;
+  border: 1px solid transparent;
+}
+main .sucursalesCont .contLocales .Locales:hover {
+  background-image: linear-gradient(rgba(36, 32, 34, 0.52), rgba(238, 87, 0, 0.7));
+  border: 1px solid white;
+}
+
+#cajaMain #menuBox .chicken, #cajaMain #menuBox .sticks, #cajaMain #menuBox .provenzal, #cajaMain #menuBox .nachos, #cajaMain #menuBox .cbv, #cajaMain #menuBox .papasFritas, #cajaMain #menuBox .shack, #cajaMain #menuBox .fuego, #cajaMain #menuBox .arg, #cajaMain #menuBox .theBomb, #cajaMain #menuBox .dobleBacon, #cajaMain #menuBox .cheeseburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#cajaMain {
+  padding: 3%;
+}
+#cajaMain #cajaFiltros {
+  margin-top: 2.5%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid black;
+}
+#cajaMain #menuBox {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "b1 b2 b3"
+                       "b4 b5 b6" 
+                       "side1 side2 side3"
+                        "side4 side5 side6";
+  justify-items: center;
+}
+@media only screen and (max-width: 480px) {
+  #cajaMain #menuBox {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "b1 b2 " "b3 b4 " "b5 b6" "side1 side2" "side3 side4" "side5 side6";
+    justify-items: center;
+  }
+}
+#cajaMain #menuBox .cheeseburger {
+  grid-area: b1;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .dobleBacon {
+  grid-area: b2;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .theBomb {
+  grid-area: b3;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .arg {
+  grid-area: b4;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .fuego {
+  grid-area: b5;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .shack {
+  grid-area: b6;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .papasFritas {
+  grid-area: side1;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .cbv {
+  grid-area: side2;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .nachos {
+  grid-area: side3;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .provenzal {
+  grid-area: side4;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .sticks {
+  grid-area: side5;
+  margin-bottom: 5%;
+}
+#cajaMain #menuBox .chicken {
+  grid-area: side6;
+  margin-bottom: 5%;
+}
+#cajaMain img {
+  border-radius: 5%;
+  width: 90%;
+}
+@media only screen and (max-width: 480px) {
+  #cajaMain img {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1440px) {
+  #cajaMain img {
+    width: 75%;
+  }
+}
+#cajaMain i {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#cajaMain button {
+  border-radius: 10%;
+  background-color: #9f9d9b;
+  border: 1px solid black;
+}
+
+#cajaCarrito {
+  text-align: center;
+  border-bottom: 5px solid black;
+  margin-bottom: 5%;
+}
+#cajaCarrito ul {
+  list-style-type: none;
+  margin: 2% auto;
+}
+#cajaCarrito ul li {
+  margin-top: 1%;
+}
+#cajaCarrito button {
+  margin: auto;
+  margin-left: 1%;
+}
+
+/*# sourceMappingURL=estilo.css.map */
