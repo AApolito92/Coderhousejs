@@ -25,7 +25,7 @@
        "clase": "theBomb",
        "descripcion": "Una bomba de sabor",
        "pCombo": 1050,
-       "foto": "../multimedia/menu/bomb.webp",
+       "foto": "../multimedia/menu/Bomb.webp",
        "alt": "burgerpic",
        "categoria": "burger"
     },
@@ -45,7 +45,7 @@
        "clase": "fuego",
        "descripcion": "Puro picante y sabor",
        "pCombo": 780,
-       "foto": "../multimedia/menu/Fuego-monterrey.webp",
+       "foto": "../multimedia/menu/fuego-monterrey.webp",
        "alt": "burgerpic",
        "categoria": "burger"
     },
